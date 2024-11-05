@@ -1,0 +1,35 @@
+.date-range,
+.number-range {
+  display: flex;
+  flex-direction: column;
+
+  &-dates,
+  &-inputs {
+    display: flex;
+    gap: 8px;
+  }
+
+  &-label,
+  &-error {
+    color: #174b7c;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 15px;
+  }
+
+  &-label {
+    margin-bottom: 20px;
+  }
+
+  &-error {
+    margin-top: 6px;
+    color: #f44336;
+  }
+
+  @media screen and (max-width: $mobile) {
+    &-dates,
+    &-inputs {
+      flex-direction: column;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+:root {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 400;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+input,
+textarea {
+  outline: 0;
+}
+
+.container {
+  @media screen and (max-width: $mobile) {
+    padding: 0 16px;
+  }
+
+  @media screen and (min-width: $min-tablet) {
+    padding: 0 40px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 0 52px;
+  }
+}
